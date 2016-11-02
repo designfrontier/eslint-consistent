@@ -27,10 +27,10 @@ ruleTester.run("quotes", rule, {
 
     invalid: [
         {
-            code: "const test = \"test\", real = 'real';",
+            code: "var test = \"test\", real = 'real';",
             errors: [{
-                message: "Fill me in.",
-                type: "Me too"
+                message: "quote style needs to be consistent within a file",
+                type: "Literal"
             }]
         }
     ]

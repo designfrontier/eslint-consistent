@@ -2,15 +2,22 @@
   "name": "eslint-plugin-be-consistent",
   "version": "0.1.0",
   "description": "stuff",
+  "author": "Daniel Sellers <daniel@designfrontier.net>",
   "keywords": [
     "eslint",
     "eslintplugin",
     "eslint-plugin"
   ],
-  "author": "Daniel Sellers",
   "main": "lib/index.js",
   "scripts": {
     "test": "mocha tests --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/designfrontier/eslint-consistent"
+  },
+  "bugs": {
+    "url": "https://github.com/designfrontier/eslint-consistent/issues"
   },
   "dependencies": {
     "requireindex": "~1.1.0"
