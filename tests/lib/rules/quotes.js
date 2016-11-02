@@ -1,5 +1,5 @@
 /**
- * @fileoverview consistent quotes within a file
+ * @fileoverview wuotes
  * @author Daniel Sellers
  */
 "use strict";
@@ -27,7 +27,7 @@ ruleTester.run("quotes", rule, {
 
     invalid: [
         {
-            code: "const a = require('a'); const b = require(\"b\");",
+            code: "const test = \"test\", real = 'real';",
             errors: [{
                 message: "Fill me in.",
                 type: "Me too"

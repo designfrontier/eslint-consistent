@@ -1,7 +1,7 @@
 {
   "name": "eslint-plugin-be-consistent",
-  "version": "0.1.0",
-  "description": "enforces consistency within a file for quotes and other things",
+  "version": "0.0.0",
+  "description": "stuff",
   "keywords": [
     "eslint",
     "eslintplugin",
@@ -22,5 +22,5 @@
   "engines": {
     "node": ">=0.10.0"
   },
-  "license": "ISC"
+  "license": "MIT"
 }

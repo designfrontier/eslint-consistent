@@ -1,6 +1,6 @@
 # eslint-plugin-be-consistent
 
-enforces consistency within a file for quotes and other things
+stuff
 
 ## Installation
 
@@ -43,7 +43,7 @@ Then configure the rules you want to use under the rules section.
 
 ## Supported Rules
 
-* Fill in provided rules here
+* `quotes` - aimed at checking quote consistency within a file and not project.
 
 
 
