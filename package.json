@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-be-consistent",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "lint for consistency of rules with in a file not a project",
   "author": "Daniel Sellers <daniel@designfrontier.net>",
   "keywords": [
