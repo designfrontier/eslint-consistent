@@ -1,6 +1,6 @@
 # eslint-plugin-be-consistent
 
-stuff
+lint for consistency of rules with in a file not a project
 
 ## Installation
 
