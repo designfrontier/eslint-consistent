@@ -20,14 +20,51 @@ const test = "test", real = 'real';
 
 const test = 'test', real = "real";
 
+render() {
+  return (
+    <div className='program'>
+      <div className='program__expander' />
+      <Header
+        isMobile={this.state.media.mobile}
+        program={this.props.program}
+      />
+      <div className="program__item-list">
+        <ProgramList
+          noItemsText={I18n.t('No program items found.')}
+          onClick={Function.prototype}
+          showDescription={true}
+        />
+      </div>
+    </div>
+  );
+}
 ```
 
 The following patterns are not warnings:
 
 ```js
 
-cosnt test = "test", real = "real";
+const test = "test", real = "real";
 
-cosnt test = 'test', real = 'real';
+const test = 'test', real = 'real';
+
+render() {
+  return (
+    <div className="program">
+      <div className="program__expander" />
+      <Header
+        isMobile={this.state.media.mobile}
+        program={this.props.program}
+      />
+      <div className="program__item-list">
+        <ProgramList
+          noItemsText={I18n.t('No program items found.')}
+          onClick={Function.prototype}
+          showDescription={true}
+        />
+      </div>
+    </div>
+  );
+}
 
 ```

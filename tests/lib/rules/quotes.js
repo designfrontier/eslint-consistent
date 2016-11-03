@@ -21,13 +21,19 @@ var ruleTester = new RuleTester();
 ruleTester.run("quotes", rule, {
 
     valid: [
-
-        // give me some code that won't trigger a warning
+        "var test = 'test', real = 'real';"
     ],
 
     invalid: [
         {
             code: "var test = \"test\", real = 'real';",
+            errors: [{
+                message: "quote style needs to be consistent within a file",
+                type: "Literal"
+            }]
+        },
+        {
+            code: "var test = 'test', real = \"real\";",
             errors: [{
                 message: "quote style needs to be consistent within a file",
                 type: "Literal"
