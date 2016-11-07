@@ -44,8 +44,12 @@ Then configure the rules you want to use under the rules section.
 ## Supported Rules
 
 * `quotes` - aimed at checking quote consistency within a file and not project.
+* `let-const-var` - aimed at checking for consistent use of let/const or var in a file not a project.
 
 
+## Contributing
 
+Check out the [CONTRIBUTING.md](CONTRIBUTING.md) for some pointers and the 
+[CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).
 
 
