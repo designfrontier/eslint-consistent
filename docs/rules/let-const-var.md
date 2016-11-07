@@ -1,6 +1,8 @@
 # checks for consistent use of let/const vs. var (let-const-var)
 
-Please describe the origin of the rule here.
+This rule is designed to prevent the mixed use of ES2015 variable declerations and 
+ES5 declerations. So no mixing of `let/const` and `var` in a single file. The rule 
+does not check within the entire code base just within a single file.
 
 
 ## Rule Details
@@ -11,7 +13,13 @@ The following patterns are considered warnings:
 
 ```js
 
-// fill me in
+const test = true;
+var fail = false;
+
+or
+
+var test = true;
+let fail = false;
 
 ```
 
@@ -19,18 +27,21 @@ The following patterns are not warnings:
 
 ```js
 
-// fill me in
+var test = true;
+var fail = false;
+
+or
+
+const test = true;
+const fail = false;
+
+or
+
+const test = true;
+let status = false;
 
 ```
 
-### Options
-
-If there are any options, describe them here. Otherwise, delete this section.
-
 ## When Not To Use It
 
-Give a short description of when it would be appropriate to turn off this rule.
-
-## Further Reading
-
-If there are other links that describe the issue this rule addresses, please include them here in a bulleted list.
+If you don't care about a mix of `const/let` and `var` in your files.
